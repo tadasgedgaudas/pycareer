@@ -1,0 +1,55 @@
+[project]
+name = "pycareer"
+description = "PyCareer - Daily Python Jobs in Your Terminal!"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Tadas Gedgaudas", email = "tadasgedgaudas@0xw.app" },
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://pycareer.io"
+Documentation = "https://github.com/tadasgedgaudas/pycareer/README.md"
+Repository = "https://github.com/tadasgedgaudas/pycareer"
+
+[tool.poetry]
+name = "pycareer"
+version = "0.1.6"
+description = ""
+authors = ["Tadas Gedgaudas <tadasgedgaudas@0xw.app>"]
+readme = "README.md"
+packages = [{include = "pycareer"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.9.0"
+rich = "^13.4.2"
+aiohttp = "^3.8.4"
+pydantic = "^1.10.9"
+structlog = "^23.1.0"
+
+[tool.poetry.dev-dependencies]
+black = "~23.3.0"
+mypy = "~1.4.0"
+pylint = "~2.17.0"
+isort = "~5.12.0"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.poetry.scripts]
+pycareer = "pycareer.cli:main"
+
+[tool.hatch.version]
+path = "pycareer/__init__.py"
+
+[build-system]
+requires = ["hatchling >= 1.7.0"]
+build-backend = "hatchling.build"
