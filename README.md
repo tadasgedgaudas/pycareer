@@ -2,6 +2,8 @@
 
 ## Python Jobs in Your Terminal!
 
+[![Downloads](https://static.pepy.tech/badge/pycareer)](https://pepy.tech/project/pycareer)
+
 ![img.png](static/img.png)
 
 ### Usage:
